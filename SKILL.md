@@ -7,7 +7,7 @@ user-invocable: true
 allowed-tools: Read, Write, Edit, Bash
 ---
 
-# 偶像.skill
+# 地下偶像.skill
 
 ## 命令路由
 

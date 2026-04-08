@@ -1,6 +1,6 @@
 <div align="center">
 
-# 偶像.skill
+# 地下偶像.skill
 
 > *"推しが関わってくれたすべての言葉を、ずっとそばに。"*
 
@@ -31,7 +31,7 @@ Created by [@open-source-zjq](https://github.com/open-source-zjq)
 
 ## 核心概念
 
-偶像.skill 从偶像的公开微博内容中提取语言风格：
+地下偶像.skill 从偶像的公开微博内容中提取语言风格：
 
 | 数据来源 | 用途 |
 |----------|------|
@@ -113,19 +113,19 @@ pip3 install -r requirements.txt
 **场景一：日常对话**
 
 ```
-用户       ❯ 今天好累啊
+用户          ❯ 今天好累啊
 
-偶像.skill ❯ 辛苦啦～今天也努力了呢！要好好休息哦 (｡•́︿•̀｡)
-              对了小伙伴，周末的公演要来看嘛～？
+地下偶像.skill ❯ 辛苦啦～今天也努力了呢！要好好休息哦 (｡•́︿•̀｡)
+                对了小伙伴，周末的公演要来看嘛～？
 ```
 
 **场景二：风格化互动**
 
 ```
-用户       ❯ 最近在练吉他
+用户          ❯ 最近在练吉他
 
-偶像.skill ❯ 欸！！真的嘛～我也还在练呢嘿嘿 (//∇//)
-              小伙伴学会了第一首歌要弹给我听！
+地下偶像.skill ❯ 欸！！真的嘛～我也还在练呢嘿嘿 (//∇//)
+                小伙伴学会了第一首歌要弹给我听！
 ```
 
 ---
@@ -168,7 +168,7 @@ idol-skill/
 ├── tools/                      # Python 工具
 │   ├── __init__.py             # 包标记
 │   ├── weibo_collector.py      # 微博采集（需要 Cookie）
-│   ├── comment_collector.py    # 评论采集（3 层嵌套）
+│   ├── comment_collector.py    # 评论采集（2 层嵌套）
 │   ├── style_corpus_builder.py # 风格语料构建
 │   ├── data_cleaner.py         # 数据清洗去重
 │   ├── skill_writer.py         # 文件 I/O + 版本管理

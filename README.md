@@ -66,10 +66,10 @@ Created by [@open-source-zjq](https://github.com/open-source-zjq)
 ```bash
 # 安装到当前项目（在 git 仓库根目录执行）
 mkdir -p .claude/skills
-git clone https://github.com/open-source-zjq/idol-skill .claude/skills/create-idol
+git clone https://github.com/open-source-zjq/idol-skill .claude/skills/idol-skill
 
 # 或安装到全局（所有项目都能用）
-git clone https://github.com/open-source-zjq/idol-skill ~/.claude/skills/create-idol
+git clone https://github.com/open-source-zjq/idol-skill ~/.claude/skills/idol-skill
 ```
 
 ### 依赖
@@ -84,11 +84,7 @@ pip3 install -r requirements.txt
 
 ## 使用
 
-在 Claude Code 中输入：
-
-```
-/create-idol
-```
+在 Claude Code 中输入 `/idol-skill create`，按提示开始创建偶像 Skill。
 
 按提示依次输入：
 
@@ -102,10 +98,11 @@ pip3 install -r requirements.txt
 
 | 命令 | 说明 |
 |------|------|
-| `/list-idols` | 列出所有偶像 Skill |
+| `/idol-skill create` | 创建新偶像 Skill |
+| `/idol-skill list` | 列出所有偶像 Skill |
+| `/idol-skill update {英文拼写}` | 追加新数据，重新分析风格 |
+| `/idol-skill rollback {英文拼写} {version}` | 回滚到历史版本 |
 | `/idol_{英文拼写}` | 偶像风格对话 |
-| `/update-idol {英文拼写}` | 追加新数据 |
-| `/idol-rollback {英文拼写} {version}` | 回滚到历史版本 |
 
 ---
 
